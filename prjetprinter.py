@@ -35,3 +35,21 @@ else:
 print("_" * 50)
     
 #offre dencre
+print("- voici nos offre d'encre a l'achat d'une imprimante")
+print("option 3 offre 2 bouteille d'encre noir")
+print("option 4 offre 1 bouteille dencre noir, cyan, magenta et jaune")
+print("option 5 vous ne voulez pas profiter de l'offre d'encre")
+
+offre_choisie = str(input("- Quel option choisisez-vous(3, 4 ou 5 ): "))
+
+if option_choisie == "3":
+    offre = option3
+    print(option3)
+elif option_choisie == "4":
+    offre = option4
+    print(option4)
+else:
+    offre = option5
+    print("vous avez refusez l'offre")
+
+print("_" * 50)
