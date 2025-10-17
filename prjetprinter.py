@@ -10,7 +10,7 @@ prix_offre_noir=19.99
 prix_offre_couleur=39.98
 #compagnie binevenu
 print("_" * 50)
-print("Bienvenu sur staples que souhaite vous acheter")
+print("Bienvenu sur staples que souhaitez-vous acheter")
 print("_" * 50)
 
 #option dimprimante
@@ -29,9 +29,9 @@ print("_" * 50)
 quantiter=int(input("- Combien imprimante souhaitez-vous acheter: "))
 print(f"- vous avez indiquer vouloir {quantiter} {option} ")
 if option_choisie == "1":
-    print(f"- voici combien vont couter vos imprimante {quantiter*prix_canon}")
+    print(f"- voici combien vont couter vos imprimante {quantiter*prix_canon:.2f}")
 else:
-    print(f"- voici combien vont couter vos imprimante {quantiter*prix_epson}")
+    print(f"- voici combien vont couter vos imprimante {quantiter*prix_epson:.2f}")
 print("_" * 50)
     
 #offre dencre
