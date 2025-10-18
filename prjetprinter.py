@@ -1,20 +1,34 @@
 # variable
 option1="imprimante Canon MegaTank MAXIFY GX7120"
+
 option2="imprimante Epson EcoTank Pro ET-5800"
+
 prix_canon=1139.99
+
 prix_epson=1099.99
+
 option3="option 3 offre 2 bouteille d'encre noir par imprimante acheter"
+
 option4="option 4 offre 1 bouteille dencre noir, cyan, magenta et jaune"
+
 option5="je ne vuex pas d'offre"
+
 prix_offre_noir=19.99
+
 prix_offre_couleur=39.98
+
 #compagnie binevenu
 print("_" * 50)
+
 print("Bienvenu sur staples que souhaitez-vous acheter")
+
 print("_" * 50)
 
 #option dimprimante
 print("option 1 imprimante Canon MegaTank MAXIFY GX7120 au prix de 1139.99$")
+
+print()
+
 print("option 2 imprimante Epson EcoTank Pro ET-5800 au prix de 1099.99$")
 
 #input choisire son option
@@ -36,18 +50,27 @@ print("_" * 50)
     
 #offre dencre
 print("- voici nos offre d'encre a l'achat d'une imprimante")
+
+print()
+
 print("option 3 offre 2 bouteille d'encre noir")
+
+print()
+
 print("option 4 offre 1 bouteille dencre noir, cyan, magenta et jaune")
+
+print()
+
 print("option 5 vous ne voulez pas profiter de l'offre d'encre")
 
 offre_choisie = str(input("- Quel option choisisez-vous(3, 4 ou 5 ): "))
 
-if option_choisie == "3":
+if offre_choisie == "3":
     offre = option3
-    print(option3)
-elif option_choisie == "4":
+    print("Vous avez choisi l'offre contenant une bouteille d'encre noir")
+elif offre_choisie == "4":
     offre = option4
-    print(option4)
+    print("Vous avez choisi l'offre contenant une bouteille d'ancre noir, cyan, magenta et jaune")
 else:
     offre = option5
     print("vous avez refusez l'offre")
