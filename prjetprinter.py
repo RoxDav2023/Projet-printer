@@ -3,6 +3,8 @@ option1="imprimante Canon MegaTank MAXIFY GX7120"
 option2="imprimante Epson EcoTank Pro ET-5800"
 prix_canon=1139.99
 prix_epson=1099.99
+prix_imprimente = "prix de l'imprimente selon l'option choisie"
+prix_offre = "prix de l'offre selon l'offre choisie"
 option3="option 3 offre 2 bouteille d'encre noir par imprimante acheter"
 option4="option 4 offre 1 bouteille dencre noir, cyan, magenta et jaune"
 option5="je ne vuex pas d'offre"
@@ -67,3 +69,24 @@ else:
     print("vous avez refusez l'offre")
 
 print("_" * 50)
+
+#Calcul du prix selon l'offre
+if option_choisie == "1":
+    prix_imprimente = prix_canon
+else:
+    if option_choisie == "2":
+        prix_imprimente = prix_epson
+if offre_choisie == "3":
+    prix_offre = prix_offre_noir
+elif offre_choisie == "4":
+    prix_offre = prix_offre_couleur
+else:
+    if offre_choisie == "5":
+        prix_offre = 0
+prix_offretot = ((prix_imprimente + prix_offre) * quantiter)
+
+#Calcul 
+if quantiter >= 50:
+    prixtotal = (prix_offretot - X%)
+else:
+    prixtotal = prix_offretot
