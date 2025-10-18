@@ -87,6 +87,21 @@ prix_offretot = ((prix_imprimente + prix_offre) * quantiter)
 
 #Calcul 
 if quantiter >= 50:
-    prixtotal = (prix_offretot - X%)
+    prixtotal = (prix_offretot - (prix_offretot * 0.5))
 else:
     prixtotal = prix_offretot
+
+
+    #Sortie des donnees
+    print(f"Sous total des imprimentes: {prix_imprimente * quantiter:.2f} ")
+    if offre_choisie == "3":
+        print(f"Le sous total des cartouches est: {prix_offre_noir * quantiter:.2f}")
+    elif offre_choisie == "4":
+        print(f"Le sous total des cartouches est de: {prix_offre_couleur * quantiter: .2f}")
+    else:
+        print("Le sous total des cartouche est de: 0.00")
+    if quantiter >= 50:
+        print(f"Rabais: {prix_offretot * 0.5:.2f}")
+    else:
+        print("Rabais: 0.00")
+    print(f"Sous total incluant le rabais et cartouches: {prixtotal}")
