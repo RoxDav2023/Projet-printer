@@ -21,16 +21,14 @@ print()
 
 
 #option dimprimante
-print("option 1 - imprimante Canon MegaTank MAXIFY GX7120 au prix de 1139.99$")
-print()
-print("option 2 - imprimante Epson EcoTank Pro ET-5800 au prix de 1099.99$")
-print()
+print("option 1 - imprimante Canon MegaTank MAXIFY GX7120 au prix de 1139.99$\n")
+print("option 2 - imprimante Epson EcoTank Pro ET-5800 au prix de 1099.99$\n")
+
 
 
 #input choisire son option
 option_choisie = str(input("- Quel option choisisez-vous(1 ou 2): "))
 print()
-
 
 #affiche option choisi
 option= option1 if option_choisie == "1" else option2
@@ -53,16 +51,12 @@ print()
 
 
 #offre dencre
-print("- voici nos offre d'encre a l'achat d'une imprimante")
-print()
-print("option 3 offre 2 bouteille d'encre noir")
-print()
-print("option 4 offre 1 bouteille dencre noir, cyan, magenta et jaune")
-print()
-print("option 5 vous ne voulez pas profiter de l'offre d'encre")
-print()
+print("- voici nos offre d'encre a l'achat d'une imprimante\n")
+print("option 3 offre 2 bouteille d'encre noir\n")
+print("option 4 offre 1 bouteille dencre noir, cyan, magenta et jaune\n")
+print("option 5 vous ne voulez pas profiter de l'offre d'encre\n")
 
-offre_choisie = str(input("- Quel option choisisez-vous(3, 4 ou 5 ): "))
+offre_choisie = str(input("- Quel option choisisez-vous(3, 4 ou 5 ):"))
 print()
 if offre_choisie == "3":
     offre = option3
@@ -92,7 +86,7 @@ else:
         prix_offre = 0
 prix_offretot = ((prix_imprimente + prix_offre) * quantiter)
 
-#Calcul 
+#Calcul
 if quantiter >= 50:
     prixtotal = (prix_offretot - (prix_offretot * 0.05))
 else:
@@ -100,8 +94,7 @@ else:
 
 
 #Sortie des donnees
-print(f"Sous total des imprimentes: {prix_imprimente * quantiter:.2f} ")
-print()
+print(f"Sous total des imprimentes: {prix_imprimente * quantiter:.2f}\n ")
 if offre_choisie == "3":
     print(f"Le sous total des cartouches est: {prix_offre_noir * quantiter:.2f}")
 elif offre_choisie == "4":
